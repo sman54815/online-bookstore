@@ -30,3 +30,4 @@ build/
 ### VS Code ###
 .vscode/
 /bookstore/target/
+/angular-bookstore/node_modules/
