@@ -13,6 +13,7 @@ import { BookCategoryComponent } from './components/book-category/book-category.
 import { SearchComponent } from './components/search/search.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
 import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+import { CartStausComponent } from './components/cart-staus/cart-staus.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
     BookCategoryComponent,
     SearchComponent,
     BookDetailsComponent,
+    CartStausComponent,
   ],
   imports: [
     BrowserModule,
