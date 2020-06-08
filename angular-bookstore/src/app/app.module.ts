@@ -2,7 +2,7 @@ import { BookService } from './services/book.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
+import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookListComponent } from './components/book-list/book-list.component';
@@ -12,8 +12,12 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { BookCategoryComponent } from './components/book-category/book-category.component';
 import { SearchComponent } from './components/search/search.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
-import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartStausComponent } from './components/cart-staus/cart-staus.component';
+import { NgxSpinnerModule } from "ngx-spinner";
+import { CartDetailsComponent } from './components/cart-details/cart-details.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,10 +30,17 @@ import { CartStausComponent } from './components/cart-staus/cart-staus.component
     SearchComponent,
     BookDetailsComponent,
     CartStausComponent,
+    CartDetailsComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, HttpClientModule, NgxPaginationModule,NgbPaginationModule, NgbAlertModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgxPaginationModule,
+    NgbPaginationModule,
+    NgbAlertModule,
+    NgxSpinnerModule, ReactiveFormsModule
   ],
   providers: [BookService],
   bootstrap: [AppComponent]
